@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--note是描述文档的根元素，一个xml有且只有一个根-->
+<!--所有的元素都可以有子元素-->
+
+
+<!--格式要求-->
+<!--1.元素都要有结束标签-->
+<!--2.对大小写敏感-->
+<!--3.正确嵌套-->
+<!--4.文档必须有根元素-->
+<!--5.属性值必须加引号-->
+<!--6.实体引用&lt;、&gt;、&amp;、&apos;、&quot;-->
+<!--7.空格会被保留-->
+<note>
+    <to>Tove</to>
+    <from>Jani</from>
+    <heading>Reminder</heading>
+    <body>Don't forget me this weekend!</body>
+
+    <!--用来描述书本-->
+    <bookstore>
+        <book category="COOKING">
+            <title lang="en">Everyday Italian</title>
+            <author>Giada De Laurentiis</author>
+            <year>2005</year>
+            <price>30.00</price>
+        </book>
+        <book category="CHILDREN">
+            <title lang="en">Harry Potter</title>
+            <author>J K. Rowling</author>
+            <year>2005</year>
+            <price>29.99</price>
+        </book>
+        <book category="WEB">
+            <title lang="en">Learning XML</title>
+            <author>Erik T. Ray</author>
+            <year>2003</year>
+            <price>39.95</price>
+        </book>
+    </bookstore>
+</note>
