@@ -2,6 +2,10 @@ package entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import reflection.Column;
+import reflection.Id;
+import reflection.Table;
 
 /**
  * <p>****************************************************************************</p>
@@ -16,12 +20,18 @@ import lombok.Data;
  */
 @Data
 @AllArgsConstructor
-
+@NoArgsConstructor
 /**
  * select * from Dept
  */
+@Table(tableName = "dept")
 public class Dept {
+    @Id
     private Long id;
-    private String dept_name;
+
+    @Column(name = "dept_name")
+    private String deptName;
+
     private String role;
+
 }
